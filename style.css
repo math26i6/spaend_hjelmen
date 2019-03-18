@@ -1,0 +1,39 @@
+#sticker {
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    margin: 1rem;
+}
+
+.farve1 {
+    background-color: red;
+}
+
+.farve2 {
+    background-color: blue;
+}
+
+.farve3 {
+    background-color: green;
+}
+
+
+.form1 {
+    border-radius: none;
+}
+
+.form2 {
+    border-radius: 25%;
+}
+
+.form3 {
+    border-radius: 100%;
+}
