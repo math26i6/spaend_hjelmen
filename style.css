@@ -2,6 +2,17 @@
     width: 500px;
     height: 500px;
     margin: 0 auto;
+    border-radius: 100%;
+    position: relative;
+
+}
+
+#logo {
+    background-image: url(stickers/logo.svg);
+    width: 726px;
+    height: 726px;
+    position: absolute;
+    z-index: 2;
 }
 
 nav {
@@ -14,26 +25,84 @@ button {
 }
 
 .farve1 {
-    background-color: red;
+    background-color: #F7F6DC;
 }
 
 .farve2 {
-    background-color: blue;
+    background-color: #9BCCAB;
 }
 
 .farve3 {
-    background-color: green;
+    background-color: #EDB4B4;
 }
 
 
-.form1 {
-    border-radius: none;
+.cykelfarve1 {
+
+    background-image: url(stickers/cykel_green.svg);
 }
 
-.form2 {
-    border-radius: 25%;
+.cykelfarve2 {
+    background-image: url(stickers/cykel_red.svg);
 }
 
-.form3 {
-    border-radius: 100%;
+.cykelfarve3 {
+    background-image: url(stickers/cykel_gul.svg);
+}
+
+.tierfarve1 {
+    background-image: url(stickers/tier_green.svg);
+}
+
+.tierfarve2 {
+    background-image: url(stickers/tier_red.svg);
+}
+
+.tierfarve3 {
+    background-image: url(stickers/tier_gul.svg);
+}
+
+
+
+#header {
+
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+
+.sidenav .closebutton {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
 }

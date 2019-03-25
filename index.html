@@ -6,28 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900" rel="stylesheet">
 </head>
 
 <body>
     <nav>
+        <button id="prev_texture">&#8249</button>
+        <p>Mønster</p>
+        <button id="ny_texture" class="filter" data-kategori="alle">&#8250</button>
         <button id="farve_tilbage">&#8249</button>
-        <p>Farve</p>
+        <p>Mønsterfarve</p>
         <button id="ny_farve" class="filter" data-kategori="alle">&#8250</button><br>
         <button id="prev_form">&#8249</button>
-        <p>Form</p>
+        <p>Bagrundsfarve</p>
         <button id="ny_form" class="filter" data-kategori="alle">&#8250</button><br>
-        <button id="ny_tekst">&#8249</button>
-        <p>Tekst</p>
-        <button id="prev_tekst" class="filter" data-kategori="alle">&#8250</button><br>
+        <br>
 
 
     </nav>
 
     <div id="container">
-
-        <div id="sticker" class="farve1 form1"></div>
+        <div id="logo">
+            <div id="logo_billede"></div>
+        </div>
+        <div id="sticker" class="farve1"></div>
 
     </div>
+
+
+    <div id="header" class="sidenav">
+        <a href="javascript:void(0)" class="closebutton" onclick="closeNav()">&times;</a>
+        <a href="index.html">Kampagne</a>
+        <a href="#">Video og process</a>
+    </div>
+
+    <span onclick="openNav()">
+        <div id="logo-menu"></div>
+    </span>
     <script src="script.js"></script>
 </body>
 
